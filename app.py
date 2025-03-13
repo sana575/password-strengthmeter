@@ -84,8 +84,8 @@ st.markdown(
         display: inline-block;
     }
     .header-animation {
-        min-width: 80px;
-        max-width: 100px;
+        min-width: 150px;  /* Increased width */
+        max-width: 150px;  /* Increased width */
         margin: 0 auto;
     }
     .stMarkdown h2 {
@@ -285,7 +285,7 @@ def main():
         unsafe_allow_html=True,
     )
     if lottie_heading:
-        st_lottie(lottie_heading, height=80, key="heading")
+        st_lottie(lottie_heading, height=150, key="heading")  # Increased height
     st.markdown("</div></div>", unsafe_allow_html=True)
 
     # Description with Animation
